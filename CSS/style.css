@@ -1,0 +1,75 @@
+/*====== import font link ======*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*   =====    google fonts  ======  */
+.raleway{
+    font-family: "Raleway", sans-serif;
+}
+
+.inter{
+    font-family: "Inter", sans-serif;
+}
+
+/*== offer ticket css===*/
+.offer-ticket {
+    position: relative;
+}
+
+.offer-ticket::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: 65%;
+    transform: translateX(-50%);
+}
+
+.offer-ticket::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10%;
+    left: 65%;
+    transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 600px) {
+    .offer-ticket {
+        position: relative;
+    }
+    
+    .offer-ticket::before {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: -10%;
+        left: 52%;
+        transform: translateX(-50%);
+    }
+    
+    .offer-ticket::after {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -10%;
+        left: 52%;
+        transform: translateX(-50%);
+    }
+  }

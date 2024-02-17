@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Ticket</title>
+    <!-- daisy ui and css link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- raw css link -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <!--======   header menu start from here    ======-->
+    <header>
+        <!----==== nav bar start from here ======----->
+        <nav class="lg:container lg:mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class=" menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 lg:block">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl font-bold">Smart-Ticket</a>
+                </div>
+                <div class="navbar-center hidden md:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn  bg-[#e8fae6] border-1 border-[#97ea8a]">Bus <img src="./images/bus-icon.png"
+                            alt=""></a>
+                </div>
+            </div>
+        </nav>
+
+        <!----==== hero section   ====----->
+        <section class="lg:container lg:mx-auto">
+            <div
+                class="hero  bg-[url(./images/banner.png)] py-[90px] lg:py-[150px] bg-center bg-no-repeat rounded-2xl ">
+                <div class=""></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold raleway">End-to-End Travel with <span
+                                class="text-[#1DD100]">Smart Paribahan</span></h1>
+                        <p class="mb-5 inter">"Experience unparalleled comfort and reliability with our premier bus
+                            service. Immerse in luxury travel, punctuality, and top-notch amenities. Your journey, our
+                            commitment – the ultimate travel experience awaits!"</p>
+                        <button class="btn btn-primary bg-[#1DD100] text-black inter">Get Started</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--==== banner bar ===--->
+            <div class="-translate-y-[100px]">
+
+                <div class="flex flex-col md:flex-row justify-evenly">
+
+
+
+
+                    <div class="border-b-4 rounded-2xl border-[#1DD100] gap-3 flex items-center py-[32px] px-[50px] bg-white">
+                        <div><img src="./images/people.png" alt=""></div>
+                        <div>
+                            <h3 class="text-[36px] font-bold">500K+</h3>
+                            <p class="text-[#03071299]">Registered users</p>
+                        </div>
+                    </div>
+
+                    <div class="border-b-4 rounded-2xl border-[#1DD100] gap-3 flex items-center py-[32px] px-[50px] bg-white">
+                        <div><img src="./images/ticket-cupon.png" alt=""></div>
+                        <div>
+                            <h3 class="text-[36px] font-bold">1.7 lacks</h3>
+                            <p class="text-[#03071299]">Tickets sold</p>
+                        </div>
+                    </div>
+
+                    <div class="border-b-4 rounded-2xl border-[#1DD100] gap-3 flex items-center py-[32px] px-[50px] bg-white">
+                        <div><img src="./images/stoppage.png" alt=""></div>
+                        <div>
+                            <h3 class="text-[36px] font-bold">80K+</h3>
+                            <p class="text-[#03071299]">Rental partners</p>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+        </section>
+    </header>
+    
+
+    <!---  main start from here  --->
+    <main>
+        
+        <!--=== best offer section start from here ====-->
+
+        <section class="md:container md:mx-auto">
+        <h1 class="text-4xl text-black text-center font-semibold">Best offers for you</h1>
+        
+        <!-- offer card ticket style container--->
+        <div class="flex flex-col md:flex-row lg:flex-row justify-evenly mt-5 gap-5">
+
+           <div class="flex bg-[#FFBF0F] p-5 offer-ticket rounded-xl">
+            <div class="pr-10 border-r-2 border-dashed">
+                <h3 class="text-2xl text-black inter font-bold">15% OFF</h3>
+                <p class="text-md font-semibold">on your next purchase</p>
+                <p class="text-sm">use by january 2024</p>
+            </div>
+            <div class="flex flex-col items-center justify-center pl-3">
+                <h3 class="text-lg text-black inter ">NEW15</h3>
+                
+                <p class="text-sm">Coupon Code</p>
+            </div>
+           </div>
+
+           <div class="flex bg-[#F78C9C] p-5 offer-ticket rounded-xl">
+            <div class="pr-10 border-r-2 border-dashed">
+                <h3 class="text-2xl text-black inter font-bold">20% OFF</h3>
+                <p class="text-md font-semibold">on your next purchase</p>
+                <p class="text-sm">use by january 2024</p>
+            </div>
+            <div class="flex flex-col items-center justify-center pl-3">
+                <h3 class="text-lg text-black inter ">Couple 20</h3>
+                
+                <p class="text-sm">Coupon Code</p>
+            </div>
+           </div>
+        
+        </div>
+
+        <button>
+            Sell All Offers
+        </button>
+
+
+        </section>
+
+
+
+    </main>
+
+
+
+</body>
+
+</html>
