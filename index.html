@@ -77,7 +77,8 @@
 
 
 
-                    <div class="border-b-4 rounded-2xl border-[#1DD100] gap-3 flex items-center py-[32px] px-[50px] bg-white">
+                    <div
+                        class="border-b-4 rounded-2xl border-[#1DD100] gap-3 flex items-center py-[32px] px-[50px] bg-white">
                         <div><img src="./images/people.png" alt=""></div>
                         <div>
                             <h3 class="text-[36px] font-bold">500K+</h3>
@@ -85,7 +86,8 @@
                         </div>
                     </div>
 
-                    <div class="border-b-4 rounded-2xl border-[#1DD100] gap-3 flex items-center py-[32px] px-[50px] bg-white">
+                    <div
+                        class="border-b-4 rounded-2xl border-[#1DD100] gap-3 flex items-center py-[32px] px-[50px] bg-white">
                         <div><img src="./images/ticket-cupon.png" alt=""></div>
                         <div>
                             <h3 class="text-[36px] font-bold">1.7 lacks</h3>
@@ -93,7 +95,8 @@
                         </div>
                     </div>
 
-                    <div class="border-b-4 rounded-2xl border-[#1DD100] gap-3 flex items-center py-[32px] px-[50px] bg-white">
+                    <div
+                        class="border-b-4 rounded-2xl border-[#1DD100] gap-3 flex items-center py-[32px] px-[50px] bg-white">
                         <div><img src="./images/stoppage.png" alt=""></div>
                         <div>
                             <h3 class="text-[36px] font-bold">80K+</h3>
@@ -110,50 +113,287 @@
             </div>
         </section>
     </header>
-    
+
 
     <!---  main start from here  --->
     <main>
-        
+
         <!--=== best offer section start from here ====-->
 
         <section class="md:container md:mx-auto">
-        <h1 class="text-4xl text-black text-center font-semibold">Best offers for you</h1>
-        
-        <!-- offer card ticket style container--->
-        <div class="flex flex-col md:flex-row lg:flex-row justify-evenly mt-5 gap-5">
+            <h1 class="text-4xl text-black text-center font-semibold">Best offers for you</h1>
 
-           <div class="flex bg-[#FFBF0F] p-5 offer-ticket rounded-xl">
-            <div class="pr-10 border-r-2 border-dashed">
-                <h3 class="text-2xl text-black inter font-bold">15% OFF</h3>
-                <p class="text-md font-semibold">on your next purchase</p>
-                <p class="text-sm">use by january 2024</p>
-            </div>
-            <div class="flex flex-col items-center justify-center pl-3">
-                <h3 class="text-lg text-black inter ">NEW15</h3>
-                
-                <p class="text-sm">Coupon Code</p>
-            </div>
-           </div>
+            <!-- offer card ticket style container--->
+            <div class="flex flex-col md:flex-row lg:flex-row justify-center my-16 gap-5 ">
 
-           <div class="flex bg-[#F78C9C] p-5 offer-ticket rounded-xl">
-            <div class="pr-10 border-r-2 border-dashed">
-                <h3 class="text-2xl text-black inter font-bold">20% OFF</h3>
-                <p class="text-md font-semibold">on your next purchase</p>
-                <p class="text-sm">use by january 2024</p>
-            </div>
-            <div class="flex flex-col items-center justify-center pl-3">
-                <h3 class="text-lg text-black inter ">Couple 20</h3>
-                
-                <p class="text-sm">Coupon Code</p>
-            </div>
-           </div>
-        
-        </div>
+                <div class="flex bg-[#FFBF0F] p-5 offer-ticket rounded-xl">
+                    <div class="pr-10 border-r-2 border-dashed">
+                        <h3 class="text-2xl text-black inter font-bold">15% OFF</h3>
+                        <p class="text-md font-semibold">on your next purchase</p>
+                        <p class="text-sm">use by january 2024</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center pl-3">
+                        <h3 class="text-lg text-black inter ">NEW15</h3>
 
-        <button>
-            Sell All Offers
-        </button>
+                        <p class="text-sm">Coupon Code</p>
+                    </div>
+                </div>
+
+                <div class="flex bg-[#F78C9C] p-5 offer-ticket rounded-xl">
+                    <div class="pr-10 border-r-2 border-dashed">
+                        <h3 class="text-2xl text-black inter font-bold">20% OFF</h3>
+                        <p class="text-md font-semibold">on your next purchase</p>
+                        <p class="text-sm">use by january 2024</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center pl-3">
+                        <h3 class="text-lg text-black inter ">Couple 20</h3>
+
+                        <p class="text-sm">Coupon Code</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="my-5 flex justify-center">
+                <button class="text-[#1DD100] border-[#1DD100] border-2 py-[15px] px-[30px] rounded-lg">
+                    Sell All Offers
+                </button>
+            </div>
+
+
+
+        </section>
+
+
+        <!--=====  seat selection section =====-->
+
+        <section class="bg-[#f7f8f8] border-t-2 border-[#1DD100] rounded-3xl py-10">
+
+            <!-- seat selection content -->
+            <div class="container mx-auto">
+
+                <div class="text-center py-28">
+                    <h3 class="text-lg font-bold">Smart Ticket</h3>
+                    <p>"Choose seats wisely! Maximum 4 seats per booking. Your preferred spots, limited availability.
+                        Secure your space for a seamless experience."</p>
+                </div>
+
+                <!-- ticket design details board -->
+                <div class="grid grid-cols-12 bg-white p-[32px] rounded-3xl ticket-display">
+
+
+                    <div class="col-span-8">
+                        <!--=== ticket header ===-->
+                        <div class="md:flex justify-between">
+                            <div class="md:flex gap-8">
+                                <img src="./images/bus-logo.png" alt="">
+                                <div class="">
+                                    <h3 class="text-lg font-bold">Smart Ticket Paribahan</h3>
+                                    <p>Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="md:flex"><img src="./images/seat-green-filled.png" alt="">
+                                    Seats left</p>
+                            </div>
+                        </div>
+
+                        <!-- ticket table -->
+                        <div class="space-y-4">
+                            <div class="flex justify-between">
+                                <p>Route</p>
+                                <p class="font-bold">Dhaka-Sylhet</p>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <p>Departure Time</p>
+                                <p class="font-bold">9:00 PM</p>
+                            </div>
+                            <div>
+                                <button class="p-2 rounded-md bg-[#ebeced]">Boarding Point - Laxmipur</button>
+                                <button class="p-2 rounded-md bg-[#ebeced]">Dropping Point - Bogura</button>
+                                <button class="p-2 rounded-md bg-[#ebeced]">Est. Time - 11 Hour</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-span-4 ">
+                        <div class="flex flex-col float-right justify-center items-center h-full w-full ">
+                            <div>
+                                <img src="./images/fare.png" alt="">
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold"><span>550</span> TK</h3>
+                                <p>Person</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- seat selection start from here -->
+
+                <div class="grid grid-cols-7">
+                    <div class="col-span-7 md:col-span-4">
+                        <!-- seat selection table -->
+                        <!--to header of table-->
+                        <div class="py-1 border-t-2 border-b-2 border-dashed">
+                            <h3 class="text-lg font-bold">Select Your Seat</h3>
+                        </div>
+                        <!--middle text-->
+                        <div class="py-1 border-b-2 border-dashed flex justify-between">
+                            <p class="flex gap-2"><img src="./images/seat-gray.png" alt="">Available</p>
+                            <p class="flex gap-2"><img src="./images/seat-green-filled.png" alt="">Selected</p>
+                        </div>
+
+                        <!--Seat selection buttom-->
+                        <div>
+                            <ul class="seat-list list-alpha space-y-2" >
+                                <!-- A seat -->
+                                <li class="flex justify-between">
+                                    <div class="flex gap-4">
+                                        <button class="btn md:w-[110px] ">A1</button>
+                                        <button class="btn  md:w-[110px]">A2</button>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <button class="btn  md:w-[110px]">A3</button>
+                                        <button class="btn  md:w-[110px]">A4</button>
+                                    </div>
+                                </li>
+
+                                <!-- B seat -->
+                                <li class="flex justify-between">
+                                    <div class="flex gap-4">
+                                        <button class="btn md:w-[110px] ">B1</button>
+                                        <button class="btn  md:w-[110px]">B2</button>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <button class="btn  md:w-[110px]">B3</button>
+                                        <button class="btn  md:w-[110px]">B4</button>
+                                    </div>
+                                </li>
+
+                                <!-- C seat -->
+                                <li class="flex justify-between">
+                                    <div class="flex gap-4">
+                                        <button class="btn md:w-[110px] ">C1</button>
+                                        <button class="btn  md:w-[110px]">C2</button>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <button class="btn  md:w-[110px]">C3</button>
+                                        <button class="btn  md:w-[110px]">C4</button>
+                                    </div>
+                                </li>
+
+                                <!-- D seat -->
+                                <li class="flex justify-between">
+                                    <div class="flex gap-4">
+                                        <button class="btn md:w-[110px] ">D1</button>
+                                        <button class="btn  md:w-[110px]">D2</button>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <button class="btn  md:w-[110px]">D3</button>
+                                        <button class="btn  md:w-[110px]">D4</button>
+                                    </div>
+                                </li>
+
+                                <!-- E seat -->
+                                <li class="flex justify-between">
+                                    <div class="flex gap-4">
+                                        <button class="btn md:w-[110px] ">E1</button>
+                                        <button class="btn  md:w-[110px]">E2</button>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <button class="btn  md:w-[110px]">E3</button>
+                                        <button class="btn  md:w-[110px]">E4</button>
+                                    </div>
+                                </li>
+
+                                <!-- F seat -->
+                                <li class="flex justify-between">
+                                    <div class="flex gap-4">
+                                        <button class="btn md:w-[110px] ">F1</button>
+                                        <button class="btn  md:w-[110px]">F2</button>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <button class="btn  md:w-[110px]">F3</button>
+                                        <button class="btn  md:w-[110px]">F4</button>
+                                    </div>
+                                </li>
+
+                                <!-- G seat -->
+                                <li class="flex justify-between">
+                                    <div class="flex gap-4">
+                                        <button class="btn md:w-[110px] ">G1</button>
+                                        <button class="btn  md:w-[110px]">G2</button>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <button class="btn  md:w-[110px]">G3</button>
+                                        <button class="btn  md:w-[110px]">G4</button>
+                                    </div>
+                                </li>
+
+                                <!-- H seat -->
+                                <li class="flex justify-between">
+                                    <div class="flex gap-4">
+                                        <button class="btn md:w-[110px] ">H1</button>
+                                        <button class="btn  md:w-[110px]">H2</button>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <button class="btn  md:w-[110px]">H3</button>
+                                        <button class="btn  md:w-[110px]">H4</button>
+                                    </div>
+                                </li>
+
+                                <!-- I seat -->
+                                <li class="flex justify-between">
+                                    <div class="flex gap-4">
+                                        <button class="btn md:w-[110px] ">I1</button>
+                                        <button class="btn  md:w-[110px]">I2</button>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <button class="btn  md:w-[110px]">I3</button>
+                                        <button class="btn  md:w-[110px]">I4</button>
+                                    </div>
+                                </li>
+
+                                <!-- J seat -->
+                                <li class="flex justify-between">
+                                    <div class="flex gap-4">
+                                        <button class="btn md:w-[110px] ">J1</button>
+                                        <button class="btn  md:w-[110px]">J2</button>
+                                    </div>
+
+                                    <div class="flex gap-4">
+                                        <button class="btn  md:w-[110px]">J3</button>
+                                        <button class="btn  md:w-[110px]">J4</button>
+                                    </div>
+                                </li>
+
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- seat selection form -->
+                    <div class="col-span-7 md:col-span-3">
+                        <h1 class="text-3xl font-bold items-center">right</h1>
+                    </div>
+                </div>
+
+            </div>
 
 
         </section>
