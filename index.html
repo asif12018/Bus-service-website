@@ -193,7 +193,7 @@
                             </div>
                             <div>
                                 <p class="md:flex md:items-center gap-1 text-[#1dd100] bg-[#ddf8d9] p-2 rounded-lg"><img
-                                        src="./images/seat-green.png" alt=""> <span>40</span>
+                                        src="./images/seat-green.png" alt=""> <span id="seat-left">40</span>
                                     Seats left</p>
                             </div>
                         </div>
@@ -401,8 +401,8 @@
                                 <!--to bar of status-->
                                 <div class="pb-2 border-b-2 border-dashed">
                                     <ul class="flex justify-evenly">
-                                        <li class="font-bold flex items-center gap-2">Seat <span
-                                                class="bg-[#1dd100] text-white text-[10px] px-2 rounded-md ">2</span>
+                                        <li class="font-bold flex items-center gap-2">Seat <span id="select-num"
+                                                class="bg-[#1dd100] text-white text-[10px] px-2 rounded-md ">0</span>
                                         </li>
                                         <li class="font-bold">Class</li>
                                         <li class="font-bold">Price</li>
@@ -410,10 +410,12 @@
                                 </div>
                                 <!-- selected list status -->
                                 <div class="pt-2 pb-2 border-b-2 ">
-                                    <ul class="flex justify-evenly ">
-                                        <li class="text-[#65686e]">C2</li>
+                                    <ul id="seat-list" class="">
+                                        <!-- <div class="flex justify-evenly ">
+                                            <li class="text-[#65686e]">C2</li>
                                         <li class="text-[#65686e]">Economoy</li>
                                         <li class="text-[#65686e]">550</li>
+                                        </div> -->
                                     </ul>
                                 </div>
 
@@ -422,7 +424,7 @@
                                     <ul class="flex justify-around gap-16">
 
                                         <li class="font-bold">Total Price</li>
-                                        <li class="font-bold">BDT 1100</li>
+                                        <li class="font-bold">BDT <span id="total-price">00</span></li>
                                     </ul>
                                 </div>
 
@@ -431,7 +433,7 @@
                                     <input type="text" placeholder="Type here"
                                         class="input input-bordered w-full max-w-xs" />
                                     <div class="translate-x-28 absolute">
-                                        <button class="bg-[#1dd100] text-white p-1.5 rounded-lg px-4">Apply</button>
+                                        <button class=" bg-[#1dd100] text-white p-1.5 rounded-lg px-4">Apply</button>
                                     </div>
                                 </div>
 
@@ -440,18 +442,19 @@
                                     <ul class="flex justify-around gap-16">
 
                                         <li class="font-bold">Grand Total</li>
-                                        <li class="font-bold">BDT 1100</li>
+                                        <li class="font-bold">BDT <span id="grand-total">00</span></li>
                                     </ul>
                                 </div>
 
                                 <!-- registration form -->
                                 <div class="flex flex-col items-center bg-white gap-4 py-5">
+                                   <form action="">
                                     <label class="form-control w-full max-w-xs">
                                         <div class="label">
                                             <span class="label-text font-bold">Passenger Name*</span>
                                         </div>
                                         <input type="text" placeholder="Enter your name"
-                                            class="input input-bordered w-full max-w-xs" />
+                                            class="input input-bordered w-full max-w-xs" required/>
 
                                     </label>
 
@@ -459,8 +462,8 @@
                                         <div class="label">
                                             <span class="label-text font-bold">Phone Number*</span>
                                         </div>
-                                        <input type="text" placeholder="Enter your phone number"
-                                            class="input input-bordered w-full max-w-xs" />
+                                        <input type="number" placeholder="Enter your phone number"
+                                            class="input input-bordered w-full max-w-xs" required/>
 
                                     </label>
 
@@ -468,12 +471,13 @@
                                         <div class="label">
                                             <span class="label-text font-bold">Email ID</span>
                                         </div>
-                                        <input type="text" placeholder="Enter your email id"
-                                            class="input input-bordered w-full max-w-xs" />
+                                        <input type="email" placeholder="Enter your email id"
+                                            class="input input-bordered w-full max-w-xs" required/>
 
                                     </label>
 
-                                    <button class="btn w-[320px] text-white font-bold bg-[#1dd100]">Next</button>
+                                    <button type="submit" class="btn w-[320px] text-white font-bold bg-[#1dd100] mt-2">Next</button>
+                                   </form>
                                 </div>
                             </div>
                         </div>

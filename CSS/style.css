@@ -110,5 +110,9 @@
 
 
 
-
+/*============*/
+.selected-seat{
+    background-color: #1dd100 !important;
+    color: white !important;
+}
   
