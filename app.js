@@ -27,6 +27,8 @@ for (let seat of seats) {
             //show total price
             showTotalPrice()
 
+            
+            
         } else if (count === 5) {
             disableAllBtn()
         }
@@ -75,3 +77,34 @@ function showTotalPrice(){
     document.getElementById('grand-total').innerText = totalPrice;
     
 }
+
+//discount function
+document.getElementById('apply').addEventListener('click',function(){
+    
+    if(count > 0){
+        let grandTotal = document.getElementById('grand-total');
+        let grandTotalNum = parseFloat(document.getElementById('grand-total').innerText);
+        const couponInput = document.getElementById('coupon-input').value;
+        if(couponInput == 'NEW15'){
+            let disCount = (15/100)*grandTotalNum;
+
+            grandTotal.innerText = grandTotalNum - disCount;
+            document.getElementById('coupon-box').style.display = 'none';
+        }else if(couponInput == 'Couple20'){
+            let disCount = (20/100)*grandTotalNum;
+
+            grandTotal.innerText = grandTotalNum - disCount;
+            document.getElementById('coupon-box').style.display = 'none';
+        }else{
+            alert('invalid coupon code')
+        }
+    }
+});
+
+
+//registration form function
+
+document.getElementById('next-btn').addEventListener('click',function(){
+    let personName = document.getElementById('passenger-name').value;
+    l
+})
