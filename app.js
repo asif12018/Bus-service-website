@@ -88,7 +88,7 @@ document.getElementById('apply').addEventListener('click', function () {
         let grandTotalNum = parseFloat(document.getElementById('grand-total').innerText);
         const couponInput = document.getElementById('coupon-input').value;
         
-        if (couponInput == 'NEW15' && count === 4) {
+        if (couponInput == 'NEW15' && count >= 4) {
             let disCount = (15 / 100) * grandTotalNum;
             grandTotal.innerText = grandTotalNum - disCount;
             discountChart.innerText = disCount.toFixed(2); // Setting discount value to the span
