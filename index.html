@@ -428,6 +428,15 @@
                                     </ul>
                                 </div>
 
+                                <!--- discount bar --->
+                                <div id="discount-chart" class="pb-2  pt-2 hidden">
+                                    <ul class="flex justify-around gap-16">
+
+                                        <li class="font-bold">discount</li>
+                                        <li class="font-bold">BDT <span id="discount">00</span></li>
+                                    </ul>
+                                </div>
+
                                 <!-- coupon feild -->
                                 <div id="coupon-box" class="flex relative justify-center items-center py-5">
                                     <input id="coupon-input" type="text" placeholder="Enter your Coupon"
@@ -448,7 +457,7 @@
 
                                 <!-- registration form -->
                                 <div class="flex flex-col items-center bg-white gap-4 py-5">
-                                   <form action="">
+                                   
                                     <label class="form-control w-full max-w-xs">
                                         <div class="label">
                                             <span class="label-text font-bold">Passenger Name*</span>
@@ -462,7 +471,7 @@
                                         <div class="label">
                                             <span class="label-text font-bold">Phone Number*</span>
                                         </div>
-                                        <input type="number" placeholder="Enter your phone number"
+                                        <input id="person-number"  type="number" placeholder="Enter your phone number"
                                             class="input input-bordered w-full max-w-xs" required/>
 
                                     </label>
@@ -476,8 +485,8 @@
 
                                     </label>
 
-                                    <button id="next-btn" type="submit" class="btn w-[320px] text-white font-bold bg-[#1dd100] mt-2">Next</button>
-                                   </form>
+                                    <button id="next-btn" class="btn w-[320px] text-white font-bold bg-[#1dd100] mt-2" disabled>Next</button>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -494,9 +503,9 @@
     </main>
 
 
-    <div class="container mx-auto">
+    <div id="pop-up" class="container mx-auto">
         <!-- Open the modal using ID.showModal() method -->
-        <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+        <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
         <dialog id="my_modal_1" class="modal">
             <div class="modal-box">
                 <div>
@@ -511,7 +520,7 @@
                 </div>
                         <!-- if there is a button in form, it will close the modal -->
                         <div class="flex justify-center">
-                            <button class="btn ">Continue</button>
+                            <button id="continue" class="btn ">Continue</button>
                         </div>
                     </form>
                 </div>

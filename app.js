@@ -79,32 +79,51 @@ function showTotalPrice(){
 }
 
 //discount function
-document.getElementById('apply').addEventListener('click',function(){
-    
-    if(count > 0){
+document.getElementById('apply').addEventListener('click', function () {
+
+    if (count > 0) {
         let grandTotal = document.getElementById('grand-total');
+        let discountChart = document.getElementById('discount'); // Assuming 'discount' is a span element
+        
         let grandTotalNum = parseFloat(document.getElementById('grand-total').innerText);
         const couponInput = document.getElementById('coupon-input').value;
-        if(couponInput == 'NEW15'){
-            let disCount = (15/100)*grandTotalNum;
-
+        
+        if (couponInput == 'NEW15' && count === 4) {
+            let disCount = (15 / 100) * grandTotalNum;
             grandTotal.innerText = grandTotalNum - disCount;
+            discountChart.innerText = disCount.toFixed(2); // Setting discount value to the span
             document.getElementById('coupon-box').style.display = 'none';
-        }else if(couponInput == 'Couple20'){
-            let disCount = (20/100)*grandTotalNum;
-
+            document.getElementById('discount-chart').classList.remove('hidden');
+        } else if (couponInput == 'Couple20' && count === 4) {
+            let disCount = (20 / 100) * grandTotalNum;
             grandTotal.innerText = grandTotalNum - disCount;
+            discountChart.innerText = disCount.toFixed(2); // Setting discount value to the span
             document.getElementById('coupon-box').style.display = 'none';
-        }else{
-            alert('invalid coupon code')
+        } else {
+            alert('Invalid coupon code or you haven\'t brought 4 tickets');
         }
     }
 });
 
 
+
 //registration form function
 
+document.getElementById('person-number').addEventListener('blur', btnActive);
+
+function btnActive(){
+    const inputNum = document.getElementById('person-number').value;
+    
+    if(inputNum.length > 1 && count > 0){
+        document.getElementById('next-btn').removeAttribute('disabled');
+    }
+}
+
 document.getElementById('next-btn').addEventListener('click',function(){
-    let personName = document.getElementById('passenger-name').value;
-    l
-})
+    my_modal_1.showModal();
+});
+
+document.getElementById('continue').addEventListener('click',function(){
+    document.getElementById('my_modal_1').style.display = 'none';
+    console.log('clicked')
+});
