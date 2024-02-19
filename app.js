@@ -83,7 +83,7 @@ document.getElementById('apply').addEventListener('click', function () {
 
     if (count > 0) {
         let grandTotal = document.getElementById('grand-total');
-        let discountChart = document.getElementById('discount'); // Assuming 'discount' is a span element
+        let discountChart = document.getElementById('discount');
         
         let grandTotalNum = parseFloat(document.getElementById('grand-total').innerText);
         const couponInput = document.getElementById('coupon-input').value;
@@ -91,14 +91,15 @@ document.getElementById('apply').addEventListener('click', function () {
         if (couponInput == 'NEW15' && count >= 4) {
             let disCount = (15 / 100) * grandTotalNum;
             grandTotal.innerText = grandTotalNum - disCount;
-            discountChart.innerText = disCount.toFixed(2); // Setting discount value to the span
+            discountChart.innerText = disCount.toFixed(2); 
             document.getElementById('coupon-box').style.display = 'none';
             document.getElementById('discount-chart').classList.remove('hidden');
         } else if (couponInput == 'Couple20' && count >= 4) {
             let disCount = (20 / 100) * grandTotalNum;
             grandTotal.innerText = grandTotalNum - disCount;
-            discountChart.innerText = disCount.toFixed(2); // Setting discount value to the span
+            discountChart.innerText = disCount.toFixed(2); 
             document.getElementById('coupon-box').style.display = 'none';
+            document.getElementById('discount-chart').classList.remove('hidden');
         } else {
             alert('Invalid coupon code or you haven\'t brought 4 tickets');
         }
