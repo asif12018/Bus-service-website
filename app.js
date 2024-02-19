@@ -94,12 +94,22 @@ document.getElementById('apply').addEventListener('click', function () {
             discountChart.innerText = disCount.toFixed(2); 
             document.getElementById('coupon-box').style.display = 'none';
             document.getElementById('discount-chart').classList.remove('hidden');
+            //alert function added
+            document.getElementById('alert-success').classList.remove('hidden');
+            setTimeout(function(){
+            document.getElementById('alert-success').classList.add('hidden');
+            },700);
         } else if (couponInput == 'Couple20' && count >= 4) {
             let disCount = (20 / 100) * grandTotalNum;
             grandTotal.innerText = grandTotalNum - disCount;
             discountChart.innerText = disCount.toFixed(2); 
             document.getElementById('coupon-box').style.display = 'none';
             document.getElementById('discount-chart').classList.remove('hidden');
+             //alert function added
+             document.getElementById('alert-success').classList.remove('hidden');
+             setTimeout(function(){
+             document.getElementById('alert-success').classList.add('hidden');
+             },700);
         } else {
             alert('Invalid coupon code or you haven\'t brought 4 tickets');
         }
@@ -128,4 +138,3 @@ document.getElementById('continue').addEventListener('click',function(){
     document.getElementById('my_modal_1').style.display = 'none';
     console.log('clicked')
 });
-
