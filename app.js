@@ -128,3 +128,4 @@ document.getElementById('continue').addEventListener('click',function(){
     document.getElementById('my_modal_1').style.display = 'none';
     console.log('clicked')
 });
+
