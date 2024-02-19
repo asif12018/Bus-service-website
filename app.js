@@ -94,7 +94,7 @@ document.getElementById('apply').addEventListener('click', function () {
             discountChart.innerText = disCount.toFixed(2); // Setting discount value to the span
             document.getElementById('coupon-box').style.display = 'none';
             document.getElementById('discount-chart').classList.remove('hidden');
-        } else if (couponInput == 'Couple20' && count === 4) {
+        } else if (couponInput == 'Couple20' && count >= 4) {
             let disCount = (20 / 100) * grandTotalNum;
             grandTotal.innerText = grandTotalNum - disCount;
             discountChart.innerText = disCount.toFixed(2); // Setting discount value to the span
